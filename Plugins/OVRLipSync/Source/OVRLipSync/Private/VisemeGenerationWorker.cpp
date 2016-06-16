@@ -38,7 +38,7 @@ bool FVisemeGenerationWorker::Init() {
 	}
 
 
-	Manager->InitLipSync(16000, VISEME_SAMPLES);
+	Manager->InitLipSync(44100, VISEME_SAMPLES);
 	Manager->CreateContextExternal();
 
 	//memset(buf, 0, VISEME_BUF_SIZE);
