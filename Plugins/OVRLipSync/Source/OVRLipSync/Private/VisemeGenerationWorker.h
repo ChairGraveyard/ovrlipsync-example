@@ -18,6 +18,9 @@ private:
 	uint8 buf[VISEME_BUF_SIZE];
 	float sampleBuf[VISEME_SAMPLES];
 
+	TArray<uint8> byteBuffer;
+	TArray<float> sampleBuffer;
+
 	TSharedPtr<class IVoiceCapture> VoiceCapture;
 
 	//Thread

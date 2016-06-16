@@ -41,8 +41,8 @@ bool FVisemeGenerationWorker::Init() {
 	Manager->InitLipSync(16000, VISEME_SAMPLES);
 	Manager->CreateContextExternal();
 
-	memset(buf, 0, VISEME_BUF_SIZE);
-	memset(sampleBuf, 0, VISEME_SAMPLES * sizeof(float));
+	//memset(buf, 0, VISEME_BUF_SIZE);
+	//memset(sampleBuf, 0, VISEME_SAMPLES * sizeof(float));
 
 	InitSuccess = true;
 
@@ -76,22 +76,29 @@ uint32 FVisemeGenerationWorker::Run() {
 		EVoiceCaptureState::Type captureState = VoiceCapture->GetCaptureState(bytesAvailable);
 		if (captureState == EVoiceCaptureState::Ok && bytesAvailable > 0)
 		{
-			memset(buf, 0, VISEME_BUF_SIZE);
+			//memset(buf, 0, VISEME_BUF_SIZE);
+			byteBuffer.Empty();
+			sampleBuffer.Empty();
+
+			byteBuffer.AddDefaulted(bytesAvailable);
 
 			uint32 readBytes = 0;
-			VoiceCapture->GetVoiceData(buf, VISEME_BUF_SIZE, readBytes);
+			VoiceCapture->GetVoiceData(byteBuffer.GetData(), byteBuffer.Num(), readBytes);
+
+			uint32 samples = readBytes / 2;
 
 			int16_t sample;
-			for (uint32 i = 0; i < VISEME_SAMPLES; i++)
+			for (uint32 i = 0; i < samples; i++)
 			{
-				sample = (buf[i * 2 + 1] << 8) | buf[i * 2];
-				sampleBuf[i] = float(sample) / 32768.0f;
+				sample = (byteBuffer[i * 2 + 1] << 8) | byteBuffer[i * 2];
+				//sampleBuf[i] = float(sample) / 32768.0f;
+				sampleBuffer.Add(float(sample) / 32768.0f);
 			}
 
 			// Do fun stuff here
 			uint32 Flags = 0;
 
-			Manager->ProcessFrameExternal(sampleBuf, (ovrLipSyncFlag)Flags);
+			Manager->ProcessFrameExternal(sampleBuffer.GetData(), (ovrLipSyncFlag)Flags);
 
 			Manager->VisemeGenerated_method(Manager->CurrentFrame);
 		}
