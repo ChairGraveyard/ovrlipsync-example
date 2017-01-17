@@ -3,6 +3,6 @@
 	"BuildId" : "18d4842d-ad3f-44c7-96c3-653b0e9b7be0",
 	"Modules" : 
 	{
-		"OVRLipSync" : "UE4Editor-OVRLipSync.dll"
+		"LipSyncTest" : "UE4Editor-LipSyncTest.dll"
 	}
 }

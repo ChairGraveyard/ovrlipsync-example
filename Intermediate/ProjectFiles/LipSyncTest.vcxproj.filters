@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\LipSyncTest.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{8A8E7A65-D160-43E6-972A-524A1C48CB48}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\LipSyncTest.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\LipSyncTestEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{044CF1B4-1AAC-46B6-9823-39031EA05068}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Plugins">
+			<UniqueIdentifier>{3C14739F-45D3-469B-AAFF-543A56342ED8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Plugins\OVRLipSync">
+			<UniqueIdentifier>{1E9E3C07-6576-455B-AEA1-DF75E16436D5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Plugins\OVRLipSync\Source">
+			<UniqueIdentifier>{2F3A80B3-04D5-4F2F-AE3E-07FB0A5DC9AC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Plugins\OVRLipSync\Source\OVRLipSync">
+			<UniqueIdentifier>{40D8A644-57EB-470F-827D-D79475994742}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\OVRLipSync.Build.cs">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync</Filter>
+		</None >
+		<Filter Include="Plugins\OVRLipSync\Source\OVRLipSync\Classes">
+			<UniqueIdentifier>{2A89E220-0C94-40FD-AFF0-48BD72EB0997}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Classes\LipSyncMicInputComponent.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Classes</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Classes\LipSyncMorphTargetComponent.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Classes</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Classes\LipSyncSoundWaveComponent.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Classes</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Classes\LipSyncTextureFlipComponent.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Classes</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Classes\OVRLipSyncContextComponent.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Classes</Filter>
+		</ClInclude >
+		<Filter Include="Plugins\OVRLipSync\Source\OVRLipSync\Private">
+			<UniqueIdentifier>{0D6AF64F-FFC2-43CD-94F5-81EBAB0717AD}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\LipSyncMicInputComponent.cpp">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\LipSyncMorphTargetComponent.cpp">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\LipSyncSoundWaveComponent.cpp">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\LipSyncTextureFlipComponent.cpp">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\OVRLipSync.cpp">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\OVRLipSync.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\OVRLipSyncContextComponent.cpp">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Private\OVRLipSyncPrivatePCH.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Private</Filter>
+		</ClInclude >
+		<Filter Include="Plugins\OVRLipSync\Source\OVRLipSync\Public">
+			<UniqueIdentifier>{CEF8E608-3713-41A8-A1A8-DCDABE0330DE}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Public\ILipSync.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Plugins\OVRLipSync\Source\OVRLipSync\Public\OVRLipSyncModule.h">
+			<Filter>Plugins\OVRLipSync\Source\OVRLipSync\Public</Filter>
+		</ClInclude >
+		<None Include="..\..\Plugins\OVRLipSync\OVRLipSync.uplugin">
+			<Filter>Plugins\OVRLipSync</Filter>
+		</None >
+		<Filter Include="Plugins\OVRLipSync\Resources">
+			<UniqueIdentifier>{8596FA51-E3F3-4563-80E2-072A774FA1AC}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Plugins\OVRLipSync\Resources\Icon128.png">
+			<Filter>Plugins\OVRLipSync\Resources</Filter>
+		</None >
+		<Filter Include="Source\LipSyncTest">
+			<UniqueIdentifier>{52A87E1F-656C-42DC-B883-EA08725848F0}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\LipSyncTest\LipSyncTest.Build.cs">
+			<Filter>Source\LipSyncTest</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\LipSyncTest\LipSyncTest.cpp">
+			<Filter>Source\LipSyncTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\LipSyncTest\LipSyncTest.h">
+			<Filter>Source\LipSyncTest</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\LipSyncTest\LipSyncTestGameMode.cpp">
+			<Filter>Source\LipSyncTest</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\LipSyncTest\LipSyncTestGameMode.h">
+			<Filter>Source\LipSyncTest</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>

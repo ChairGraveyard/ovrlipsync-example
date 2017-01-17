@@ -1,0 +1,4 @@
+D:\repos\ovrlipsync-pre-proc\Source\LipSyncTest\LipSyncTest.Build.cs
+D:\repos\ovrlipsync-pre-proc\Plugins\OVRLipSync\Source\OVRLipSync\OVRLipSync.Build.cs
+D:\repos\ovrlipsync-pre-proc\Source\LipSyncTest.Target.cs
+D:\repos\ovrlipsync-pre-proc\Source\LipSyncTestEditor.Target.cs
