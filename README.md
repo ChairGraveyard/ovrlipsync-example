@@ -1,4 +1,3 @@
-# ovrlipsync-example
-Example Project for UE4 Unofficial OVRLipSync Plugin
-# more information
-http://blog.csdn.net/xoyojank/article/details/52636952
+THIS IS NOW OBSOLETE, USE THE OFFICIAL VERSION!!!!: 
+
+https://developer.oculus.com/documentation/audiosdk/latest/concepts/book-audio-ovrlipsync-unreal/
